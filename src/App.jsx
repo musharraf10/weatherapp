@@ -88,14 +88,14 @@ function App() {
               </Typography>
             </Box>
 
-            <SearchBox 
+            <SearchBox
               onSearch={handleSearch}
               onLocationSearch={handleLocationSearch}
               loading={loading}
             />
 
             {loading && <LoadingSpinner />}
-            
+
             {error && !loading && (
               <ErrorMessage error={error} onRetry={handleRetry} />
             )}
