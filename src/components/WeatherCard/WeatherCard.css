@@ -1,0 +1,143 @@
+.weather-card-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  overflow: hidden;
+}
+
+.weather-content {
+  padding: 2rem !important;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.city-name {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.country-name {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.weather-chip {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.temperature-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1;
+}
+
+.feels-like {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.temp-range {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.divider {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 1.5rem 0;
+}
+
+.details-grid {
+  margin-top: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.detail-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.detail-icon {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.detail-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .weather-content {
+    padding: 1.5rem !important;
+  }
+  
+  .temperature {
+    font-size: 3rem;
+  }
+  
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .detail-item {
+    padding: 0.75rem 0.25rem;
+  }
+}

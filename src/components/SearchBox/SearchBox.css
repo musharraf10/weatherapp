@@ -1,0 +1,54 @@
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.search-box {
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.search-input .MuiOutlinedInput-root {
+  border-radius: 12px;
+}
+
+.recent-searches {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.recent-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.recent-chip {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.recent-chip:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}

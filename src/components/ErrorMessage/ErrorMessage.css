@@ -1,0 +1,35 @@
+.error-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.error-alert {
+  background: rgba(244, 67, 54, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  border-radius: 12px;
+  color: white;
+}
+
+.error-alert .MuiAlert-icon {
+  color: #ff5252;
+}
+
+.error-alert .MuiAlertTitle-root {
+  color: white;
+  font-weight: 600;
+}
+
+.error-alert .MuiAlert-message {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.error-alert .MuiButton-root {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.error-alert .MuiButton-root:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
